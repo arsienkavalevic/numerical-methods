@@ -88,11 +88,3 @@ axs[3].plot([x for x in np.linspace(-3, 3, 100)], [newton_interpolation(x, eq_no
 axs[4].plot([x for x in np.linspace(-3, 3, 100)], [newton_interpolation(x, ch_nodes_3, ch_f2_values_3) for x in np.linspace(-3, 3, 100)], label='ch_f2_3')
 axs[4].plot([x for x in np.linspace(-3, 3, 100)], [newton_interpolation(x, ch_nodes_10, ch_f2_values_10) for x in np.linspace(-3, 3, 100)], label='ch_f2_10')
 axs[4].plot([x for x in np.linspace(-3, 3, 100)], [newton_interpolation(x, ch_nodes_20, ch_f2_values_20) for x in np.linspace(-3, 3, 100)], label='ch_f2_20')
-
-# Построение графиков для функции f1(x)
-plot_interpolation(f1, equidistant_nodes, 'equidistant', a, b, n_values)
-plot_interpolation(f1, chebyshev_nodes, 'Chebyshev', a, b, n_values)
-
-# Построение графиков для функции f2(x)
-plot_interpolation(f2, equidistant_nodes, 'equidistant', a, b, n_values)
-plot_interpolation(f2, chebyshev_nodes, 'Chebyshev', a, b, n_values)
